@@ -8,9 +8,10 @@ def index(request):
 
 def ask(request):
     question = request.GET.get('question', '')
+    print(question)
 
     erniebot.api_type = 'aistudio'
-    erniebot.access_token = 'd44fd3be0e61ecfaabc77295eb3ff619e3564c80'
+    erniebot.access_token = 'api-key'
     model = 'ernie-bot'
 
     message_content = "The task scenario is: I need you to refine the knowledge points I provide into four small modules to help me learn."\
@@ -54,8 +55,8 @@ def ask(request):
         module_title = item.get("模块主题", "")
         module_description = item.get("本模块内容简介", "")
         if module_title and module_description:
-            module_titles.append({"模块主题":module_title, "本模块内容简介":module_description})
+            module_titles.append({"title":module_title, "content":module_description})
 
+    print(module_titles)
     return JsonResponse(module_titles, safe=False)
 
-    

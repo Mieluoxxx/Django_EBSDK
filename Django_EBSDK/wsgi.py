@@ -1,5 +1,5 @@
 """
-WSGI config for AutoOCR_EBSDK project.
+WSGI config for Django_EBSDK project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'AutoOCR_EBSDK.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Django_EBSDK.settings')
 
 application = get_wsgi_application()

@@ -2,8 +2,6 @@
 
 # 文心小课堂
 
-![img](file:///D:\QQ\QQfiles\1835951525\Image\C2C\F1EX}TOEP6DKH9HIE{ETV{J.png)
-
 ## 一、Django使用基本配置
 
 ### 第一讲、创建Django文件
@@ -32,7 +30,6 @@ python manage.py runserver			  #启动Django的开发服务器。在本地环境
 
 #### 4. [localhost:8000](localhost:8000)，欢迎界面
 
-![](E:\xiangmu\baidu\photo\Djangolocal.png)
 
 #### 5.创建一个自定义的APP
 
@@ -322,8 +319,6 @@ Strictly follow the format I provided
 每个模块的介绍在30个中文汉字左右。
  The output is just pure JSON format, with no other descriptions.
 ```
-
-![](E:\xiangmu\baidu\photo\prompt.png)
 
 秘诀：
 
